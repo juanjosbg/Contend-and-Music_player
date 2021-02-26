@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link css conection to html -->
+    <link rel="stylesheet" href="style-music.css">
+    <!-- Link de los iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="player__controls">
+                <div class="player_btn player_btn--small">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <h5 class="player__title">Playing now</h5>
+                <div class="player_btn player_btn--small">
+                    <i class='bx bx-library'></i>
+                </div>
+            </div>
+            
+            <div class="player__album">
+                <img src="assets/img/Tamaha-MAU.jpg" alt="Album Cover" class="player__img">
+            </div>
+            <h2 class="player__artis">Tamahau</h2>
+            <h3 class="player__song">Tamahau - MAU</h3>
+
+            <input type="range" value="20" min="0" class="Player__level">
+
+            <div class="audio-duration">
+                <div class="start">00:01</div>
+                <div class="end">03:00</div>
+            </div>
+
+            <audio class="player__audio" controls id="audio">
+                <source src="assets/music/y2mate.com - Tamahau  Higher.mp3" type="audio/mpeg">
+            </audio>
+
+        <!-- Tamaños y botones -->
+            <div class="player__controls">
+                <div class="player_btn player_btn--medium">
+                    <i class='bx bxs-chevrons-left'></i>
+                </div>
+                
+                <div class="player_btn player_btn--medium blue" id="play">
+                    <i class='bx bx-play play-btn'></i>
+                    <i class='bx bx-pause pause-btn hide'></i>
+                 </div>
+
+                <div class="player_btn player_btn--medium">
+                    <i class='bx bxs-chevrons-right'></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
