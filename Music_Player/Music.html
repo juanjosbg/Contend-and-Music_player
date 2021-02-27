@@ -17,22 +17,23 @@
     <div class="container">
         <div class="player">
             <div class="player__controls">
-                <div class="player_btn player_btn--small">
+                <div class="player__btn player__btn--small">
                     <i class='bx bxs-chevron-left'></i>
                 </div>
                 <h5 class="player__title">Playing now</h5>
-                <div class="player_btn player_btn--small">
+                <div class="player__btn player__btn--small">
                     <i class='bx bx-library'></i>
                 </div>
             </div>
-            
+
             <div class="player__album">
                 <img src="assets/img/Tamaha-MAU.jpg" alt="Album Cover" class="player__img">
             </div>
+
             <h2 class="player__artis">Tamahau</h2>
             <h3 class="player__song">Tamahau - MAU</h3>
 
-            <input type="range" value="20" min="0" class="Player__level">
+            <input type="range" value="20" min="0" class="player__level">
 
             <div class="audio-duration">
                 <div class="start">00:01</div>
@@ -43,18 +44,16 @@
                 <source src="assets/music/y2mate.com - Tamahau  Higher.mp3" type="audio/mpeg">
             </audio>
 
-        <!-- Tamaños y botones -->
+            <!-- Tamaños y botones -->    
             <div class="player__controls">
-                <div class="player_btn player_btn--medium">
+                <div class="player__btn player__btn--medium">
                     <i class='bx bxs-chevrons-left'></i>
                 </div>
-                
-                <div class="player_btn player_btn--medium blue" id="play">
+                <div class="player__btn player__btn--medium blue" id="play">
                     <i class='bx bx-play play-btn'></i>
-                    <i class='bx bx-pause pause-btn hide'></i>
+                    <i class='bx bx-pause pause-btn hide' style="display: none;"></i>
                  </div>
-
-                <div class="player_btn player_btn--medium">
+                <div class="player__btn player__btn--medium">
                     <i class='bx bxs-chevrons-right'></i>
                 </div>
             </div>
@@ -64,4 +63,5 @@
     
     
 </body>
+    <script src="scripts.js"></script>
 </html>
